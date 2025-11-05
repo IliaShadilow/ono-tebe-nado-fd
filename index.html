@@ -15,22 +15,37 @@
 
     <header class="header">
       <nav class="menu-otn">
-        <ul class="list-marker-header">
-          <li class="list-no-marker"><a href="#" class="font-list">главная</a></li>
-          <li><a href="#" class="font-list font-list__underlined">посмотреть лоты</a></li>
-          <li><a href="#" class="font-list font-list__underlined">об аукционе</a></li>
+        <ul class="list-marker-header font-list">
+          <li class="list-no-marker"><a href="#">главная</a></li>
+          <li><a href="#" class="font-list__underlined">посмотреть лоты</a></li>
+          <li class="list-marker-header-end"><a href="#" class="font-list__underlined">об аукционе</a></li>
         </ul>
       </nav>
 
-      <a href="#" class="logo-otn">
-        <!-- <img src="/images/logo-black.svg" alt="логотип с изображением оно тебе надо"> -->
+      <a class="logo-otn">
+        <img src="/images/logo-black.svg" alt="логотип с изображением оно тебе надо">
       </a>
 
-      <address class="address-otn">
-        <p class="font-list font-list__underlined"><a href="#">+9 999 555 5555</a></p>
-        <p class="font-list font-list__underlined"><a href="#">info@sobaka.ge</a></p>
-        <p class="font-list">наб. Принсенграхт 263- 265, Амстердам</p>
+      <address class="address-otn font-list">
+        <p class="font-list__underlined">
+          <a class="font-list__underlined" 
+          href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="font-list__underlined"
+           href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        </p>
+        
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
+
+      <!-- <address class="address-otn font-list">
+        <p class="font-list__underlined">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+        </p>
+        <p class="font-list__underlined">
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        </p>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>  моя наработка-->
       
     </header>
 
@@ -46,8 +61,9 @@
           <span class="">тебе</span>
           <span class="">надо</span>
         </h1>
+
         <div class="description">
-          <p>Аукцион вещей, вкоторые никто не верил</p>
+          <p class="text-things">Аукцион вещей, вкоторые никто не верил</p>
           <button class="btn-see-all-lots">сделать ставку</button>
         </div>
       </section>
@@ -130,26 +146,26 @@
     <!-- footer -->
 
     <footer class="footer">
-      <address class="address-otn">
-        <p class="font-list font-list__underlined"><a href="#">+9 999 555 5555</a></p>
-        <p class="font-list font-list__underlined"><a href="#">info@sobaka.ge</a></p>
-        <p class="font-list">наб. Принсенграхт 263- 265, Амстердам</p>
+      <address class="address-otn font-list">
+        <p class="font-list__underlined"><a href="#">+9 999 555 5555</a></p>
+        <p class="font-list__underlined"><a href="#">info@sobaka.ge</a></p>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
 
       <!-- menu-footer -->
 
       <nav class="menu-otn">
-        <ul class="list-marker-header">
-          <li><a href="#" class="font-list">главная</a></li>
-          <li><a href="#" class="font-list font-list__underlined">посмотреть лоты</a></li>
-          <li><a href="#" class="font-list font-list__underlined">об аукционе</a></li>
+        <ul class="font-list list-no-marker">
+          <li><a href="#">главная</a></li>
+          <li><a href="#" class="font-list__underlined">посмотреть лоты</a></li>
+          <li><a href="#" class="font-list__underlined">об аукционе</a></li>
         </ul>
       </nav>
 
       <!-- social-footer -->
 
       <div class="social-footer">
-        <ul class="list-no-marker">
+        <ul class="list-marker-footer list-no-marker">
           <li><a href="#" class=""></a></li>
           <li><a href="#" class=""></a></li>
           <li><a href="#" class=""></a></li>

@@ -51,8 +51,9 @@
 }
 
 .cover {
+  position: relative;
   width: 100%;
-  height: 757px;
+  min-height: 757px;
   /* height: 100vh; */
   /* TODO: оптимизировать до background: #ff0000 url('image.jpg') no-repeat center / cover; */
   background-image: url('/images/cover.jpg');
@@ -62,21 +63,58 @@
   color: #fff;
 }
 
-.size-title-otn {
+.cover__size-title-otn {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   font-weight: bold;
+  min-height: 385px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 165px;
   font-size: 100px;
+  letter-spacing: 0.23em;
+  background: #000;
+}
+
+.cover__size-title-otn__start {
+  margin-left: 0;
+  /* letter-spacing: 30px; */
+}
+
+.cover__size-title-otn__center {
+  margin: auto;
+}
+
+.cover__size-title-otn__end {
+  margin-right: 0;
+  margin-top: auto;
+  padding-right: 5px;
 }
 
 .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 106px auto 0;
   font-size: 22px;
+  background: rgba(240, 16, 16, 0.6);
 }
 
-.text-things {
+.cover__text-things {
   font-weight: normal;
-  /* растянуть текст */
+  word-spacing: 19px;
 }
 
 .btn-see-all-lots {
+  margin: 0;
+  padding: 12px 32px 11px 31px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
   font-weight: 500;
   /* снести базовые стили кнопки */
 }
@@ -143,6 +181,10 @@
   list-style-type: none;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .font-list {
   font-weight: normal;
   font-size: 18px;
@@ -153,7 +195,15 @@
   text-underline-offset: 4px; /* сделать полосу чуть ниже */
 }
 
+.indent-block {
+  margin-bottom: 180px; /* нижний  между блоками */
+}
+
 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.6); /* черный фон, 60 % прозрачности
   нужно наложить сверху через z-index наверх посмотри как  */
 }

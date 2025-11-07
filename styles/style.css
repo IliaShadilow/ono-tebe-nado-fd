@@ -12,7 +12,7 @@
   background: #67bdb1;
 }
 
-.menu-otn {
+.header__menu-otn {
   margin-left: 50px;
 }
 
@@ -31,7 +31,7 @@
 .logo-otn {
   display: block;
   width: 135px;
-  height: 105px; 
+  /* height: 105px;  */
 }
 
 .address-otn {
@@ -64,32 +64,39 @@
 }
 
 .cover__size-title-otn {
-  display: flex;
+  /* display: flex; */
   /* flex-wrap: wrap; */
   justify-content: space-between;
   font-weight: bold;
   min-height: 385px;
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 165px;
+  margin: 165px auto 0;
+  /* margin-top: 165px; */
   font-size: 100px;
-  letter-spacing: 0.23em;
+  letter-spacing: 0.30em;
+  line-height: 1.3em; 
+  /* TODO: добайвляй всему тексту line-height 
+  подогнать слова m + h по макету */
   background: #000;
 }
 
-.cover__size-title-otn__start {
-  margin-left: 0;
+.cover__spans {
+  display: block;
+  /* margin-left: 0; */
   /* letter-spacing: 30px; */
 }
 
-.cover__size-title-otn__center {
-  margin: auto;
+.cover__span__center {
+  /* margin: auto; */
+  text-align: center;
 }
 
-.cover__size-title-otn__end {
-  margin-right: 0;
-  margin-top: auto;
-  padding-right: 5px;
+.cover__span__end {
+  text-align: right;
+  /* margin-right: 0; */
+  /*margin-top: auto;*/
+  /*padding-right: 5px; */
 }
 
 .description {
@@ -97,7 +104,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
-  margin: 106px auto 0;
+  margin: 101px auto 0;
   font-size: 22px;
   background: rgba(240, 16, 16, 0.6);
 }
@@ -126,6 +133,8 @@
 .block-lots {
 
 }
+
+/* TODO: class for all h2 lots */
 
 .block-lots__film {
   background-image: url('/images/card-lot-01.jpg');

@@ -5,10 +5,9 @@
 }
 
 body {
-  background-color: aquamarine;
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif; /* Arial, добавь при необходимости */
+  font-family: Raleway, Arial, sans-serif;
 }
 
 h1,

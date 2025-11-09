@@ -13,7 +13,7 @@
     <!-- header -->
 
     <header class="header">
-      <nav class="header__menu-otn">
+      <nav class="header__menu">
         <ul class="list-marker-header font-list">
           <li class="list-no-marker"><a>главная</a></li>
           <li>
@@ -25,14 +25,14 @@
         </ul>
       </nav>
 
-      <a class="logo-otn">
+      <a class="header__logo">
         <img
-          src="/images/logo-black.svg"
+          src="./images/logo-black.svg"
           alt="логотип с изображением оно тебе надо"
         />
       </a>
 
-      <address class="header__address-otn font-list">
+      <address class="header__address font-list">
         <p class="font-list__underlined">
           <a class="font-list__underlined" href="tel:+99995555555"
             >+9 999 555 5555</a
@@ -52,34 +52,33 @@
       <!-- cover -->
 
       <section class="cover indent-block-big">
-        <div class="overlay">
-          <h1 class="cover__size-title-otn">
-            <span class="cover__spans cover__span-start">оно</span>
-            <span class="cover__spans cover__span-center">тебе</span>
-            <span class="cover__spans cover__span-end">надо</span>
-          </h1>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="cover__spans cover__span-start">оно</span>
+          <span class="cover__spans cover__span-center">тебе</span>
+          <span class="cover__spans cover__span-end">надо</span>
+        </h1>
 
-          <div class="description text-uppercase">
-            <p class="cover__text-things">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="btn-see-all-lots">сделать ставку</button>
-          </div>
+        <div class="cover__description text-uppercase">
+          <p class="cover__text-things">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button type="button" class="btn-see-all-lots">сделать ставку</button>
         </div>
       </section>
 
       <!-- lots-otn -->
 
-      <section class="lots-otn indent-block-small">
+      <section class="lots indent-block-small">
         <h2 class="lots__title bold-title">лоты</h2>
         <ul class="lots__card-list list-no-marker">
           <li class="card__lots block-lots__film">
             <a class="card-link" href="#0">
               <article class="card__article">
                 <div class="overlay"></div>
-                <h2 class="card__text font-list__underlined card__title">
+                <h3 class="card__text font-list__underlined card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h2>
+                </h3>
                 <p class="card__text font-main">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -94,9 +93,9 @@
             <a class="card-link" href="#0">
               <article class="card__article">
                 <div class="overlay"></div>
-                <h2 class="card__text font-list__underlined card__title">
+                <h3 class="card__text font-list__underlined card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h2>
+                </h3>
                 <p class="card__text font-main">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -113,9 +112,9 @@
             <a class="card-link" href="#0">
               <article class="card__article">
                 <div class="overlay"></div>
-                <h2 class="card__text font-list__underlined card__title">
+                <h3 class="card__text font-list__underlined card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h2>
+                </h3>
                 <p class="card__text font-main">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -133,23 +132,23 @@
           href="#0"
           class="font-main font-list__underlined lots__look-more-link__link"
         >
-          <p class="lots__look-more-link__p">посмотреть больше</p>
+          посмотреть больше
         </a>
       </section>
 
       <!-- about-auction -->
 
       <section class="about-auction indent-block-big">
-        <section class="block-logo-white">
+        <div class="block-logo-white">
           <div class="block-logo-white__black-background">
             <img
-              src="/images/logo-white.svg"
+              src="./images/logo-white.svg"
               alt="белый логотип с изображением оно тебе надо"
             />
           </div>
-        </section>
+        </div>
 
-        <section class="about__column">
+        <div class="about__column">
           <h2 class="about__title bold-title">Об аукционе</h2>
 
           <div class="about__text">
@@ -171,21 +170,17 @@
               лоты стали культовыми.
             </p>
           </div>
-        </section>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
 
     <footer class="footer">
-      <address class="footer__address-otn font-list">
+      <address class="footer__address font-list">
         <p class="font-list__underlined">
-          <a class="font-list__underlined" href="tel:+99995555555">
-            +9 999 555 5555
-          </a>
-          <a class="font-list__underlined" href="mailto:info@sobaka.ge">
-            info@sobaka.ge
-          </a>
+          <a href="tel:+99995555555"> +9 999 555 5555 </a>
+          <a href="mailto:info@sobaka.ge"> info@sobaka.ge </a>
         </p>
 
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -193,7 +188,7 @@
 
       <!-- menu__footer -->
 
-      <nav class="footer__menu menu-otn">
+      <nav class="footer__menu">
         <ul class="footer__menu-list font-list list-no-marker">
           <li><a class="footer__menu-list-item" href="#0">главная</a></li>
           <li>
